@@ -1,0 +1,69 @@
+
+body {
+    background-color: #cfd8dc
+}
+.input-group {
+    margin-bottom: 1%;
+}
+
+.pray {
+    padding: 5px 15px;
+    border-radius: 17%;
+}
+.crd1 {
+    margin: 1% auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cfd8dc;
+}
+#body {
+    margin-top: 5%;
+    background-color: #cfd8dc;
+}
+
+.crd2 {
+    margin: 1% auto 3% auto;
+    width: 90%;
+    border: 5px solid #cfd8dc;
+    padding: 0px;
+}
+/* .heading {
+    padding: 5%;
+    display: inline;
+} */
+p {
+    text-indent: 5%;
+}
+/* .btn-secondary {
+    position: absolute;
+    left: -9999px;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+
+} */
+
+/* .btn-outline-info {
+    float: right;
+    padding: 2px 5px; 
+} */
+
+.material-icons {
+    color: gray;
+    float: right;
+}
+#div-for-like {
+    width: 100%;
+    margin: 5% auto;
+
+}
+.btn-for-likes-counter, .btn-for-likes-counter:hover, .btn-for-likes-counter:focus, .btn-for-likes-counter:active {
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+    /* margin: 10% auto; */
+    float: right;
+}
+.btn-for-likes-counter:hover, .btn-for-likes-counter:focus {
+    background-color: #00AEFF;
+    border-color: #00AEFF;
+}

@@ -1,0 +1,69 @@
+
+
+.login {
+    border: 1px solid #bebe16;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40% auto 50% auto;
+    /* bottom: 60% */
+}
+.input-group, .form-action {
+    margin: 4% auto;
+}
+/* .signout {
+    border: 1px solid #bebe16;
+    color: #bebe16;
+}
+.signout:hover{
+    background: #bebe16;
+    color: white;
+    border: 0px;
+}
+.signout:focus{
+    border: 2px solid #bebe16;
+} */
+/* .btn-sample sign { 
+    color: #FFFFFF; 
+    background-color: #BCCF2D; 
+    border-color: #BCCF2D; 
+  } 
+   
+  .btn-sample sign:hover, 
+  .btn-sample sign:focus, 
+  .btn-sample sign:active, 
+  .btn-sample sign.active, 
+  .open .dropdown-toggle.btn-sample { 
+    color: #FFFFFF; 
+    background-color: #AFC223; 
+    border-color: #BCCF2D; 
+  } 
+   
+  .btn-sample sign:active, 
+  .btn-sample sign.active, 
+  .open .dropdown-toggle.btn-sample { 
+    background-image: none; 
+  } 
+   
+  .btn-sample.disabled, 
+  .btn-sample[disabled], 
+  fieldset[disabled] .btn-sample, 
+  .btn-sample.disabled:hover, 
+  .btn-sample[disabled]:hover, 
+  fieldset[disabled] .btn-sample:hover, 
+  .btn-sample.disabled:focus, 
+  .btn-sample[disabled]:focus, 
+  fieldset[disabled] .btn-sample:focus, 
+  .btn-sample.disabled:active, 
+  .btn-sample[disabled]:active, 
+  fieldset[disabled] .btn-sample:active, 
+  .btn-sample.disabled.active, 
+  .btn-sample[disabled].active, 
+  fieldset[disabled] .btn-sample.active { 
+    background-color: #BCCF2D; 
+    border-color: #BCCF2D; 
+  } 
+   
+  .btn-sample .badge { 
+    color: #BCCF2D; 
+    background-color: #FFFFFF; 
+  } */

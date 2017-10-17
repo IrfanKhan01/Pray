@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+
+    
+<script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAgMmb90MWZ6SOwS12agDl5uSOtkH5Xzjs",
+    authDomain: "my-new-auth-project.firebaseapp.com",
+    databaseURL: "https://my-new-auth-project.firebaseio.com",
+    projectId: "my-new-auth-project",
+    storageBucket: "my-new-auth-project.appspot.com",
+    messagingSenderId: "343724292273"
+  };
+  firebase.initializeApp(config);
+</script>
+    <style>
+        .input-group {
+            margin-bottom: 1%;
+        }
+
+        .pray {
+            padding: 5px 15px;
+            border-radius: 17%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                    
+                 <span class="text-white bg-dark pray">P</span>
+                 <span class="text-white bg-warning pray">R</span>
+                 <span class="text-white bg-warning pray">A</span>
+                 <span class="text-white bg-dark pray">Y</span> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feeds/feeds.html">Feeds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" onclick="signout()">Sign out</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 style="margin: 5% auto" id="name"></h3>
+                </div>
+                <div class="col-6">
+                    <div style="margin: 5% 0%">
+                    <div class="form-action">
+                        <button style="float:right; margin:3% 1%" class="btn btn-warning text-light" onclick="profile()">Profile</button>
+                    </div>
+                    <div class="form-action">
+                        <button style="float:right;margin: 3% 0.5%" class="btn btn-dark" onclick="feed()">Feeds</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-3 col-sm-1 col-xs-0">
+                </div>
+                <div class="col-md-6 col-sm-10 col-xs-12">
+                    <div style="bottom: 50%;">
+
+                        <div style="text-align:center">
+                            <div class="input-group">
+                                <input style="margin: 10% 0% 3% 0%" type="text" name="sender-name" id="sender-name" placeholder="Sender Name" class="form-control form-control-lg">
+                            </div>
+                            <div class="input-group">
+                                <textarea class="form-control form-control-lg" name="post" id="post" cols="50" rows="5" placeholder="Post your pray.."></textarea>
+                            </div>
+                            <div class="form-action">
+                                <button style="margin-top:3%" class="btn btn-dark btn-lg" onclick="praySubmit()">Post</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-1 col-xs-0"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>
