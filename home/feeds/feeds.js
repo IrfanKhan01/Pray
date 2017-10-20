@@ -13,7 +13,7 @@ var uID = localStorage.getItem('UID');
 
 var database = firebase.database().ref('/');
 
-var checkLikes = false;
+// var checkLikes = false;
 var likeCounter = 0;
 var body = document.getElementById('body');
 
