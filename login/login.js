@@ -18,7 +18,7 @@ function login() {
     firebase.auth().signInWithEmailAndPassword(user.email, user.pwd)
     .then(function(res) {
         database.child('users/' + res.uid).once('value', function (snapshot) {
-            localStorage.setItem('UID', snapshot.key);
+            // localStorage.setItem('UID', snapshot.key);
             var convert = JSON.stringify(snapshot.val())
             localStorage.setItem('loggedInUser', convert)
             location = '../home/home.html';

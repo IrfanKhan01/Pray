@@ -9,11 +9,10 @@ function signout() {
       });   
 }
 
-var uID = localStorage.getItem('UID');
+// var uID = localStorage.getItem('UID');
 
 var database = firebase.database().ref('/');
 
-// var checkLikes = false;
 var likeCounter = 0;
 var body = document.getElementById('body');
 
@@ -32,10 +31,13 @@ database.child('post').on("child_added", function (snap) {
     var h4 = document.createElement("H3")
     h4.setAttribute("class", "card-title heading")
     var p = document.createElement("P")
-    p.setAttribute("class", "card-text")
+    p.setAttribute("class", "card-text");
+
+
 
     // comment code
-    // var form = document.createElement('form');
+    var form = document.createElement('FORM');
+    
     var commentDiv = document.createElement("DIV");
     commentDiv.setAttribute("class", "input-group");
 
@@ -56,12 +58,13 @@ database.child('post').on("child_added", function (snap) {
             comment: input.value,
             postUID: obj.key
         }
-        database.child('comment').push(commentOBJ)
+        database.child('comment').push(commentOBJ);
+
+        input.value = '';
     })
     span.appendChild(button)
     commentDiv.appendChild(input)
     commentDiv.appendChild(span)
-    // form.appendChild(commentDiv);
 
 
     
@@ -75,6 +78,7 @@ database.child('post').on("child_added", function (snap) {
     div2.appendChild(h4)
     div2.appendChild(p)
     div2.appendChild(commentDiv)
+    // div2.appendChild(form)
     div1.appendChild(div2)
     div1.appendChild(commentList)
     body.appendChild(div1)
@@ -133,33 +137,25 @@ function renderComment(comment) {
             x.style.color ='deepskyblue';
             likeCounter++;
 
-            database.child('Like/'+ uID).set(likeCounter);
-            console.log(likeCounter);
+            // database.child('Like/'+ uID).set(likeCounter);
+            // console.log(likeCounter);
 
         }
         else {
             x.style.color = 'gray';
             likeCounter--;
-            database.child('Like/'+ uID).set(likeCounter);
+        //   database.child('Like/'+ uID).set(likeCounter);
             
-            console.log(likeCounter);
+            // console.log(likeCounter);
         } 
       
     }
       
 }
-database.child('Like/' + uID).on('child_added', function(s) {
+// database.child('Like/' + uID).on('child_added', function(s) {
 
-    console.log(s.val())
-    // if (uID >= 1) {
-
-    //     console.log(uID);
-    //     // x.style.color = 'deepskyBlue';
-    // }
-    // else {
-    //     x.style.color = 'gray';
-    // }
-})
+    // console.log(s.val())
+// })
 
 
 
